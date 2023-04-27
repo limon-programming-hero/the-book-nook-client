@@ -1,0 +1,92 @@
+[
+  {
+    "name": "1984",
+    "author": "George Orwell",
+    "price": 400,
+    "image": "https://i.ibb.co/tBbj0tL/1984-by-George-Orwell.jpg"
+  },
+  {
+    "name": "The Great Gatsby  ",
+    "author": "F. Scott Fitzgerald",
+    "price": 350,
+    "image": "https://i.ibb.co/K0t1GxT/The-Great-Gatsby-by-F-Scott-Fitzgerald.jpg"
+  },
+  {
+    "name": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "price": 300,
+    "image": "https://i.ibb.co/MPXh9cf/The-Hobbit-by-J-R-R-Tolkien.jpg"
+  },
+  {
+    "name": "The Color Purple ",
+    "author": "Alice Walker",
+    "price": 480,
+    "image": "https://i.ibb.co/jhGgZXT/The-Color-Purple-by-Alice-Walker.jpg"
+  },
+  {
+    "name": "The Catcher in the Rye ",
+    "author": "J.D. Salinger",
+    "price": 500,
+    "image": "https://i.ibb.co/xLGS2pJ/The-Catcher-in-the-Rye-by-J-D-Salinger.jpg"
+  },
+  {
+    "name": "The Brothers Karamazov ",
+    "author": "Fyodor Dostoevsky",
+    "price": 460,
+    "image": "https://i.ibb.co/pfghZRJ/The-Brothers-Karamazov-by-Fyodor-Dostoevsky.jpg"
+  },
+  {
+    "name": "The Adventures of Huckleberry Finn ",
+    "author": "Mark Twain",
+    "price": 370,
+    "image": "https://i.ibb.co/h1hmD0s/The-Adventures-of-Huckleberry-Finn-by-Mark-Twain.jpg"
+  },
+  {
+    "name": "One Hundred Years of Solitude ",
+    "author": "Gabriel Garcia Marquez",
+    "price": 480,
+    "image": "https://i.ibb.co/3rZtLDK/One-Hundred-Years-of-Solitude-by-Gabriel-Garcia-Marquez.jpg"
+  },
+  {
+    "name": "Pride and Prejudice ",
+    "author": "Jane Austen",
+    "price": 450,
+    "image": "https://i.ibb.co/wyvsjtL/Pride-and-Prejudice-by-Jane-Austen.jpg"
+  },
+  {
+    "name": "Moby-Dick ",
+    "author": "Herman Melville",
+    "price": 510,
+    "image": "https://i.ibb.co/Vx33WKX/Moby-Dick-by-Herman-Melville.jpg"
+  },
+  {
+    "name": "Frankenstein",
+    "author": " Mary Shellel",
+    "price": 415,
+    "image": "https://i.ibb.co/x34HFGJ/Frankenstein-by-Mary-Shelley.jpg"
+  },
+  {
+    "name": "Jane Eyre",
+    "author": "Charlotte Bronte",
+    "price": 380,
+    "image": "https://i.ibb.co/FnKnp6w/Jane-Eyre-by-Charlotte-Bronte.jpg"
+  },
+  {
+    "name": "Crime and Punishment ",
+    "author": " Fyodor Dostoevsky",
+    "price": 530,
+    "image": "https://i.ibb.co/PmqHqhz/Crime-and-Punishment-by-Fyodor-Dostoevsky.jpg"
+  },
+  {
+    "name": "Animal Farm ",
+    "author": " George Orwell",
+    "price": 440,
+    "image": "https://i.ibb.co/rkvjffr/Animal-Farm-by-George-Orwell.jpg"
+  },
+  {
+    "name": "A Tale of Two Cities ",
+    "author": "Charles Dickens ",
+    "price": 250,
+    "image": "https://i.ibb.co/g6DqhVY/A-Tale-of-Two-Cities-by-Charles-Dickens.jpg"
+  }
+]
