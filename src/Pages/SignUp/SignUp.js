@@ -23,7 +23,7 @@ const SignUp = () => {
                 .then(result => {
                     const user = result.user;
                     console.log(user);
-                    fetch('http://localhost:5000/jwt', {
+                    fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/jwt', {
                         method: 'POST',
                         headers: { 'content-type': 'application/json' },
                         body: JSON.stringify(user)

@@ -24,7 +24,7 @@ export const router = createBrowserRouter([
                     {
                         path: '',
                         element: <Products></Products>,
-                        loader: () => fetch('http://localhost:5000/books')
+                        loader: () => fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/books')
                     },
                     {
                         path: '/login',
@@ -37,7 +37,7 @@ export const router = createBrowserRouter([
                     {
                         path: '/checkout/:id',
                         element: <PrivateRoute><CheckOut></CheckOut></PrivateRoute>,
-                        // loader: ({ params }) => fetch(`http://localhost:5000/checkout/${params.id}}`)
+                        // loader: ({ params }) => fetch(`https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/checkout/${params.id}}`)
                     },
                     {
                         path: '/order',

@@ -10,7 +10,7 @@ const ManageBooks = () => {
     const { loader } = useState();
 
     useEffect(() => {
-        fetch('http://localhost:5000/books')
+        fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/books')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, []);
@@ -18,7 +18,7 @@ const ManageBooks = () => {
     const HandlerDelete = (id) => {
         const confirm = window.confirm('Are you sure you want to delete this book?');
         if (confirm) {
-            fetch(`http://localhost:5000/books/${id}`, {
+            fetch(`https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/books/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json',

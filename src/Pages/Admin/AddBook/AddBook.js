@@ -30,7 +30,7 @@ const AddBook = () => {
         const bookData = { name, author, price }
         console.log(bookData);
         // console.log(typeof(bookData?.price));
-        fetch('http://localhost:5000/books', {
+        fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/books', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

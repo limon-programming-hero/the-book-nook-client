@@ -12,7 +12,7 @@ const Order = () => {
     const { user } = useContext(allContext);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders?email=${user?.email}`, {
+        fetch(`https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/orders?email=${user?.email}`, {
             headers: {
                 'content-type': 'application/json',
                 authorization: `Bearer ${localStorage.getItem('the-book-nook-jwt')}`
@@ -31,7 +31,7 @@ const Order = () => {
     console.log(orders);
 
     const HandlerUpdate = (id) => {
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/orders/${id}`, {
             method: "PATCH",
             body: JSON.stringify({ status: 'Approved' }),
             headers: {

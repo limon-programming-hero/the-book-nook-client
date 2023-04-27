@@ -12,7 +12,7 @@ const CheckOut = () => {
     const { user, loader } = useContext(allContext);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/checkout/${id}`, {
+        fetch(`https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/checkout/${id}`, {
             headers: {
                 'content-type': 'application/json',
                 authorization: `Bearer ${localStorage.getItem('the-book-nook-jwt')}`
@@ -37,7 +37,7 @@ const CheckOut = () => {
         const confirm = window.confirm('Are you sure to order this Book?');
         // console.log(_id);
         if (confirm) {
-            fetch('http://localhost:5000/orders', {
+            fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/orders', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
