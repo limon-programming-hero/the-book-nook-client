@@ -7,7 +7,7 @@ const LogIn = () => {
     const navigate = useNavigate();
     const location = useLocation();
     // console.log(location);
-    const from = location.state?.from?.pathName || '/';
+    const from = location.state?.from?.pathname || '/';
     const HandleLogIn = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -18,17 +18,18 @@ const LogIn = () => {
             .then(result => {
                 const user = result.user;
                 console.log(user);
-                fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/jwt', {
-                    method: 'POST',
-                    headers: { 'content-type': 'application/json' },
-                    body: JSON.stringify(user)
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        // console.log("data", data.token)
-                        localStorage.setItem('the-book-nook-jwt', data.token)
-                        navigate(from);
-                    });
+
+                async function fetchingFunc() {
+                    const fetching = await fetch('https://the-book-nook-server-limon-programming-hero-vercel.vercel.app/jwt', {
+                        method: 'POST',
+                        headers: { 'content-type': 'application/json' },
+                        body: JSON.stringify(user)
+                    })
+                    const res = await fetching.json();
+                    localStorage.setItem('the-book-nook-jwt', res.token);
+                    navigate(from);
+                }
+                fetchingFunc();
             })
             .catch(err => {
                 const errorMessage = err.message;

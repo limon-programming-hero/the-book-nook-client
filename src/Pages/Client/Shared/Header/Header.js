@@ -8,11 +8,12 @@ const Header = () => {
     const HandlerSignOut = () => {
         logOut()
             .then(result => {
-                // signned out 
+                localStorage.removeItem('the-book-nook-jwt');
             })
             .catch(err => {
                 console.log(err.message);
             })
+
     }
     const allMenu =
         <>
